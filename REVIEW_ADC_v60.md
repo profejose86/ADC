@@ -358,3 +358,12 @@ Se agregó `adcOLSyncTeacherProfile` en `assets/js/tramites/ol01.js`. Al abrir u
 La prueba `node tests/ol01-perfil.test.cjs` pasó con datos sintéticos. Comprueba los seis campos, reapertura del borrador, actualización posterior del perfil, campos vaciados, cambio de sexo e invalidación del PDF solamente al cambiar datos. Los 19 scripts continúan pasando sintaxis. La comparación de nombres de funciones no encontró funciones del respaldo ausentes en los scripts actuales. Esa comparación acredita presencia, no equivalencia completa de comportamiento.
 
 La comprobación de reconstrucción exacta describe la extracción inicial. A partir de esta corrección funcional, el hash de OL-01 difiere deliberadamente del manifiesto original. No se actualizó el hash para esconder esa diferencia. Las pruebas visuales e integrales permanecen pendientes. No se realizaron commits ni push.
+# Referencia incorporada: nomenclatura de licencias (11/11/2026)
+
+Se archivó el PDF aportado por el usuario en `docs/referencias/Nomenclatura.pdf`, junto con el catálogo legible `nomenclatura-licencias.md`, datos estructurados `nomenclatura-licencias.json` y extracción literal `nomenclatura-texto.txt`. El catálogo registra 46 motivos y 173 variantes: salud 50, otras licencias 68, permisos 43 y sección adicional de sanciones 12. Script reproducible: `tools/extract-nomenclatura.py` (requiere pdfplumber).
+
+Los casilleros del código se concatenan completos: 1 / 1 / 1 = 111; 1 / 6 / 10 = 1610. También se preservan los componentes y una clave separada para evitar ambigüedades. Código y encuadre legal se almacenan por separado: para enfermedad común titular, el documento indica código 111 y encuadre 309-B 1).
+
+Pendiente para futuros formularios: cotejar etiquetas y campos reales de DJ-01 y OL-01 antes de aplicar el pedido de colocar el código en «artículo» o «ley número». El PDF no identifica esos conceptos como equivalentes. Seleccionar por motivo, situación de revista y condiciones (prórroga, porcentaje de haberes, parentesco u otras), conservando observaciones y página fuente. No elegir una variante solamente por titular/interino/suplente. También existe Funcionario Político.
+
+No se modificó la aplicación ni se conectaron estos datos a los formularios. No se verificó vigencia normativa. Quedan documentados texto recortado del traslado transitorio, variantes de escritura de Interino, salto del motivo 11 al 13 en otras licencias y sección adicional sin encabezado legible. Las aclaraciones de duelo de la página 6 se conservan sin reinterpretación. No se realizó push.
